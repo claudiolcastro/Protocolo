@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-10dp"
+                    android:padding="16dp"
+                    android:text="Data"
+                    android:textColor="@color/textColor"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/data_field"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:editable="false"
+                    android:hint="12/02/2022"
+                    android:padding="16sp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-12dp"
+                    android:padding="16dp"
+                    android:text="Hora"
+                    android:textColor="@color/textColor"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/hora_field"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:editable="false"
+                    android:hint="12:22:43"
+                    android:padding="16sp"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-12dp"
+            android:padding="16dp"
+            android:text="Entregador"
+            android:textColor="@color/textColor"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/entregador_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:editable="false"
+            android:hint="Cláudio Luiz de Abreu"
+            android:padding="16sp"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="16dp"
+            android:background="#ccc" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-10dp"
+                    android:padding="16dp"
+                    android:text="Documento"
+                    android:textColor="@color/textColor"
+                    android:textSize="13sp"
+                    android:id="@+id/textView" />
+
+                <EditText
+                    android:id="@+id/doc_field"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:hint="000000"
+                    android:padding="16sp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-12dp"
+                    android:padding="16dp"
+                    android:text="Cliente"
+                    android:textColor="@color/textColor"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/cliente_field"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:hint="cliente"
+                    android:padding="16sp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="16dp"
+            android:background="#ccc" />
+
+        <RadioGroup
+            android:id="@+id/group1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <RadioButton
+                android:id="@+id/radio_entrega"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entrega"
+                android:textColor="@color/textColor"
+                android:checked="true"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radio_retirada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+
+                android:text="Retirada"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="1dp"
+            android:background="#ccc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-12dp"
+            android:padding="16dp"
+            android:text="Recebedor"
+            android:textColor="@color/textColor"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/recebedor_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:hint="nome"
+            android:padding="16sp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-12dp"
+            android:padding="16dp"
+            android:text="Observação"
+            android:textColor="@color/textColor"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/obs_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:hint="obs..."
+            android:padding="16sp"
+            android:textSize="16sp" />
+
+
+
+        <Button
+            android:id="@+id/btn_enviar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/ColorPrimaryDark"
+            android:text="Assinar Protocolo"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+</ScrollView>

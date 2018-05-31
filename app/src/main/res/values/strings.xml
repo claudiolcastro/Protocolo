@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Protocolo</string>
+    <string name="clear_pad">Limpar</string>
+    <string name="save_signature">Enviar</string>
+</resources>
